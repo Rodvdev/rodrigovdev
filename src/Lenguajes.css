@@ -1,0 +1,54 @@
+.App-logo, .html-logo, .css-logo, .js-logo {
+    height: 10vmin;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+    .html-logo, .css-logo{
+      animation: html-logo-spin infinite 4s linear;
+    }
+  }
+  
+  .lenguajes {
+    background-color: #f0f0f0;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  /* Estilos para los elementos dentro del encabezado */
+  .App-logo, .html-logo, .css-logo, .js-logo {
+    margin: 0 10px; /* Agrega un margen de 10 píxeles en los lados */
+  }
+  
+  .elemento {
+    flex: 0 0 calc(25% - 20px); /* Ocupar el 25% del ancho total menos el margen */
+    /* Otros estilos según tus necesidades */
+  }
+  
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes html-logo-spin {
+    0% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(-10deg);
+    }
+  }
+  
