@@ -13,5 +13,4 @@ function App() {
 
 document.body.style.overflowY = "hidden";
 
-
 export default App;
