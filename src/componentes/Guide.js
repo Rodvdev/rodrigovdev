@@ -45,15 +45,81 @@ const topics = [
         content: (
           <div>
             <h3>Pasos para trabajar con GitHub en Visual Studio Code:</h3>
+      
+            <h4>1. Configurar nombre y correo:</h4>
             <ul>
-              <li><strong>Configurar nombre y correo:</strong> <code>git config --global user.name "TuNombre"</code> <code>git config --global user.email "TuCorreo"</code></li>
-              <li><strong>Clonar un repositorio:</strong> <code>git clone https://github.com/usuario/repositorio.git</code></li>
-              <li><strong>Hacer commit y push:</strong> <code>git commit -m "Descripción de los cambios"</code> <code>git push origin nombre-de-la-rama</code></li>
+              <li><strong>Configurar nombre:</strong> <code>git config --global user.name "TuNombre"</code></li>
+              <li><strong>Configurar correo:</strong> <code>git config --global user.email "TuCorreo"</code></li>
+              <li>Estos comandos configuran tu identidad en Git, y aparecerán en tus commits.</li>
             </ul>
+      
+            <h4>2. Clonar un repositorio:</h4>
+            <ul>
+              <li><strong>Clonar un repositorio:</strong> <code>git clone https://github.com/usuario/repositorio.git</code></li>
+              <li>Esto descarga una copia del repositorio desde GitHub a tu máquina local.</li>
+            </ul>
+      
+            <h4>3. Hacer cambios, commit y push:</h4>
+            <ul>
+              <li><strong>Añadir archivos:</strong> <code>git add .</code> (Agrega todos los cambios)</li>
+              <li><strong>Hacer commit:</strong> <code>git commit -m "Descripción de los cambios"</code></li>
+              <li><strong>Subir los cambios (push):</strong> <code>git push origin nombre-de-la-rama</code></li>
+            </ul>
+      
+            <h4>4. Cerrar sesión en GitHub:</h4>
+            <ul>
+              <li><strong>Eliminar las credenciales almacenadas:</strong></li>
+              <ul>
+                <li>**Windows**: Usa el "Administrador de Credenciales" para eliminar las credenciales de GitHub.</li>
+                <li>**Mac/Linux**: Usa el comando: <code>git credential-cache exit</code> o elimina el archivo <code>~/.git-credentials</code>.</li>
+              </ul>
+              <li>Esto te permitirá iniciar sesión con una nueva cuenta la próxima vez que hagas un <code>push</code>.</li>
+            </ul>
+      
+            <h4>5. Cambiar de usuario en GitHub:</h4>
+            <ul>
+              <li><strong>Configurar nuevo nombre y correo:</strong></li>
+              <ul>
+                <li><code>git config --global user.name "NuevoNombre"</code></li>
+                <li><code>git config --global user.email "NuevoCorreo"</code></li>
+              </ul>
+              <li><strong>Eliminar credenciales almacenadas:</strong> Si necesitas iniciar sesión con un nuevo usuario, elimina las credenciales anteriores siguiendo los pasos de cerrar sesión.</li>
+            </ul>
+      
+            <h4>6. Crear una nueva rama:</h4>
+            <ul>
+              <li><strong>Crear una rama:</strong> <code>git checkout -b nombre-de-la-rama</code></li>
+              <li>Esto crea una nueva rama y te cambia a esa rama para empezar a trabajar en ella.</li>
+            </ul>
+      
+            <h4>7. Cambiar entre ramas:</h4>
+            <ul>
+              <li><strong>Cambiar a una rama existente:</strong> <code>git checkout nombre-de-la-rama</code></li>
+            </ul>
+      
+            <h4>8. Acceder a un repositorio remoto existente:</h4>
+            <ul>
+              <li><strong>Listar repositorios remotos:</strong> <code>git remote -v</code></li>
+              <li><strong>Agregar un repositorio remoto:</strong> <code>git remote add origin https://github.com/usuario/repositorio.git</code></li>
+            </ul>
+      
+            <h4>9. Recuperar cambios de la rama remota (pull):</h4>
+            <ul>
+              <li><strong>Actualizar tu copia local con los últimos cambios del remoto:</strong> <code>git pull origin nombre-de-la-rama</code></li>
+              <li>Esto descarga y fusiona los cambios más recientes de la rama remota a tu copia local.</li>
+            </ul>
+      
+            <h4>10. Ver el historial de commits:</h4>
+            <ul>
+              <li><strong>Ver el historial de commits:</strong> <code>git log</code></li>
+              <li>Este comando muestra los commits realizados en la rama actual.</li>
+            </ul>
+      
             <p>Visita: <a href="https://docs.github.com/" target="_blank" rel="noopener noreferrer">Documentación de GitHub</a></p>
           </div>
         ),
-      },
+      }
+,      
       {
         title: "Vercel",
         content: (
