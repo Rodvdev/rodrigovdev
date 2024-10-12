@@ -1,0 +1,43 @@
+.HomeTitle h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.HomeTitle h2 {
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.HomeTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+}
+
+.logo {
+  width: 132px;
+  max-width: 100%; /* Para que sea responsive */
+  margin-left: 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  color: #8892b0;
+  font-size: 24px;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer !important;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+}

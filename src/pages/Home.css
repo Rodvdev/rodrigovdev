@@ -1,0 +1,100 @@
+.Home {
+  padding: 3rem 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .HomeLeft,
+  .HomeRight {
+    padding: 6rem 0;
+  }
+
+  .HomeLeft {
+    position: fixed;
+    max-width: 50%;
+    left: 0;
+    -webkit-user-select: none;
+  }
+  .HomeRight {
+    position: absolute;
+    right: 0;
+    max-width: 50%;
+    padding-top: 4rem;
+    -webkit-user-select: none;
+  }
+}
+
+.HomeLeft,
+.HomeRight {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+.HomeLeft {
+  padding-right: 2rem;
+}
+
+.HomeRight {
+  padding-left: 0;
+}
+
+@media (min-width: 1024px) {
+  .HomeLeft,
+  .HomeRight {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .HomeLeft {
+    padding-right: 2rem;
+  }
+
+  .HomeRight {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .HomeLeft {
+    position: relative;
+    max-width: 100%;
+  }
+  .HomeRight {
+    position: relative;
+    max-width: 100%;
+  }
+  .HomeLeft,
+  .HomeRight {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+
+  .HomeRight, .HomeLeft {
+    padding-left: 0;
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .HomeLeft,
+  .HomeRight {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0;
+  }
+  .HomeLeft {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .HomeTitle {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .HomeRight {
+    padding-left: 0;
+  }
+}
+
+.Home p {
+  font-size: 1rem;
+}

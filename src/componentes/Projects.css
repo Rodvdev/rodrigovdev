@@ -1,0 +1,213 @@
+.project-item {
+  align-items: flex-start;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 190px; /* Ajusta el tamaño de las imágenes */
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 1.5rem;
+}
+.image2 {
+  width: 180px; /* Ajusta el tamaño de las imágenes */
+}
+.countdown-container {
+  text-align: center;
+  color: #860a0a;
+  font-family: 'Arial', sans-serif;
+  margin-top: 20px;
+}
+
+.countdown h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.time-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.5rem;
+  min-width: 50px;
+}
+
+.time-value {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  display: block;
+}
+
+.time-label {
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.line {
+  width: 100%;
+  height: 5px;
+  background-color: #000;
+  border: 2px solid #000;
+}
+
+
+.Projects h2 {
+  font-size: 32px;
+  color: #dd1e1e;
+  margin-bottom: 1.5rem;
+  
+}
+
+.Projects ul {
+  list-style-type: none;
+  padding: 0;
+}
+.project-info {
+    
+  text-align: left;
+}
+.Projects li {
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.Projects li:hover {
+  transform: translateY(-5px);
+
+  background-color: #ffffff0e;
+  box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+.Projects a {
+  color: #db7d7d;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.2s;
+}
+
+.Projects a:hover {
+  color: #ccd6f6;
+}
+
+.Projects em {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 14px;
+  color: #8892b0;
+}
+
+/* Estilos específicos para proyectos móviles */
+.project-item.mobile .project-image {
+  width: 100px;
+  height: 220px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+/* Estilos específicos para proyectos web */
+.project-item.web .project-image {
+  width: 340px;
+  height: 220px;
+  object-fit: cover;
+}
+
+.project-item.web {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tag-container {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #7a1c0a;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .project-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-item.project-item.mobile {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-image {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+    .Projects {
+      padding: 2rem;
+      padding-top: 3rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+
+    .Projects li {
+      padding: 0rem;
+      margin-bottom: 100px;
+    }
+
+    
+.Projects li:hover {
+    transform: translateY(0);
+    background: none;
+    box-shadow: none;
+  }
+  }
+  
+  .tech {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  /* Estilos específicos para proyectos móviles */
+.mobile-image {
+    width: 150px; /* Ajusta el tamaño de las imágenes para móviles */
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Estilos específicos para proyectos web */
+  .web-image {
+    width: 300px; /* Ajusta el tamaño de las imágenes para web */
+    height: auto;
+    object-fit: cover;
+  }

@@ -1,0 +1,55 @@
+
+.logo-container {
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+    gap:20px;
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box p{
+    font-size: 9rem;
+}
+
+
+.box-1 {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, #93240C, #5E1407);
+}
+
+
+.box-2 {
+    background: linear-gradient(135deg, rgba(20, 99, 179), rgb(10, 63, 115));
+}
+
+
+
+.box-3 {
+    background: linear-gradient(135deg, #93240C, #5E1407);
+}
+
+
+.box-4 {
+    background: linear-gradient(135deg, rgba(20, 99, 179), rgb(10, 63, 115));
+}
+
+
+.box-5 {
+    background: linear-gradient(135deg, #93240C, #5E1407);
+}
+
+
+.box-6 {
+    background: linear-gradient(135deg, rgba(20, 99, 179), rgb(10, 63, 115));
+}

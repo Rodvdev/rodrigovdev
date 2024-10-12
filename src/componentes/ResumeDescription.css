@@ -1,0 +1,19 @@
+.ResumeDescription {
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .toggle-button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .toggle-button:hover {
+    text-decoration: underline;
+  }
+  
