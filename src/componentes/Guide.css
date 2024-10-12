@@ -1,18 +1,11 @@
-/* Estilos globales */
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
-  }
+
   
   /* Contenedor de la guía */
   .guide {
     max-width: 900px;
     margin: 40px auto;
     padding: 30px;
-    background-color: #ffffff;
+    background-color: #ffffff6a;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
@@ -45,7 +38,7 @@ body {
   
   /* Hover sobre los títulos */
   .guide h2:hover {
-    color: #0077cc;
+    color: #ffffff;
   }
   
   /* Contenido desplegado de la sección */
