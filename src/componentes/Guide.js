@@ -54,20 +54,50 @@ const topics = [
           </div>
         ),
       },
-    {
-      title: "Vercel",
-      content: (
-        <div>
-          <h3>Desplegar una aplicación:</h3>
-          <ul>
-            <li><strong>Instalar Vercel CLI:</strong> <code>npm install -g vercel</code></li>
-            <li><strong>Iniciar sesión:</strong> <code>vercel login</code></li>
-            <li><strong>Desplegar la app:</strong> <code>vercel</code></li>
-          </ul>
-          <p>Visita: <a href="https://vercel.com/docs" target="_blank" rel="noopener noreferrer">Documentación de Vercel</a></p>
-        </div>
-      ),
-    },
+      {
+        title: "Vercel",
+        content: (
+          <div>
+            <h3>Desplegar una aplicación:</h3>
+            <ul>
+              <li><strong>Instalar Vercel CLI:</strong> <code>npm install -g vercel</code></li>
+              <li><strong>Iniciar sesión:</strong> <code>vercel login</code></li>
+              <li><strong>Desplegar la app (Producción):</strong> <code>vercel --prod</code></li>
+              <li><strong>Desplegar en modo desarrollo:</strong> <code>vercel dev</code></li>
+            </ul>
+      
+            <h3>Configurar Variables de Entorno:</h3>
+            <ul>
+              <li><strong>Agregar variable de entorno:</strong> <code>vercel env add [development|preview|production]</code></li>
+              <li><strong>Ver variables de entorno:</strong> <code>vercel env ls</code></li>
+              <li><strong>Eliminar variable de entorno:</strong> <code>vercel env rm</code></li>
+            </ul>
+      
+            <h3>Desplegar en diferentes entornos:</h3>
+            <ul>
+              <li><strong>Desplegar en Preview (entorno de pruebas):</strong> <code>vercel --pre</code></li>
+              <li><strong>Desplegar en Producción:</strong> <code>vercel --prod</code></li>
+            </ul>
+      
+            <h3>Enlaces personalizados y dominios:</h3>
+            <ul>
+              <li><strong>Añadir un dominio:</strong> <code>vercel domains add dominio.com</code></li>
+              <li><strong>Ver dominios actuales:</strong> <code>vercel domains ls</code></li>
+              <li><strong>Eliminar un dominio:</strong> <code>vercel domains rm dominio.com</code></li>
+            </ul>
+      
+            <h3>Otros comandos útiles:</h3>
+            <ul>
+              <li><strong>Cancelar despliegue:</strong> <code>vercel cancel [deploymentId]</code></li>
+              <li><strong>Mostrar el historial de despliegues:</strong> <code>vercel ls</code></li>
+              <li><strong>Eliminar un despliegue:</strong> <code>vercel remove [deploymentId]</code></li>
+            </ul>
+      
+            <p>Visita: <a href="https://vercel.com/docs" target="_blank" rel="noopener noreferrer">Documentación de Vercel</a></p>
+          </div>
+        ),
+      },
+      
     {
       title: "ApolloGraphQL",
       content: (
